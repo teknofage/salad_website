@@ -1,10 +1,55 @@
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="noindex" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <META NAME="geo.position" CONTENT="latitude; longitude">
-        <META NAME="geo.placename" CONTENT="Place Name">
-        <META NAME="geo.region" CONTENT="Country Subdivision Code">
-        <title>Stephanie Alysha Living And Design</title>
-        <description>Transform your space and your life with designer Stephanie Alysha. Feng Shui master with essential oils, staging, administrative and real estate solutions.</description>
+body {
+    color:rgb(10, 10, 9);
+}
+
+.navbar {
+    padding: 1rem;
+    background-color: rgb(3, 3, 3);
+}
+
+.hero-background-img {
+    position: relative;
+    background: rgba(0, 0, 0, 0.3); /* If our image is bright, we can tone it down with this darker overlay */
+    max-width: 50%;
+    height: auto;
+    padding-top:200px;  
+    padding-bottom:200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.hero-background-img:after  {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.herotext  {
+    padding-top:200px;  
+    padding: 2.5em;
+
+}
+
+.about-me {
+    padding: 4.5em; 
+    left: 10em;
+    right: 10em;
+}
+
+.footer {
+    padding 1rem;
+    background-color: orange;
+}
+
+.btn-primary:hover {
+    background-color: blue;
+    color: white;
+}
