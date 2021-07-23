@@ -15,7 +15,6 @@
 
     
     <meta charset="utf-8" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>{{seo.title}}</title>
@@ -38,21 +37,6 @@
         <!-- CUSTOM STYLES --> 
         <link rel="stylesheet" href="../styles.css">
         
-    <!-- This is a handlebars IF statement
-         Checking for a custom "color" parameter from server.js -->
-    {{#if color}} 
-    <!-- If there is a color value, update the style for the page title -->
-    <style>
-      .title {
-        color: {{color}};
-      }
-    </style>
-    {{/if}}    
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="content" role="main">
-        
         <!-- NAVBAR -->
     <nav class="navbar navbar-dark">
         <div class="container mb-5 mt-5 pb-5 pt-1">
@@ -63,7 +47,7 @@
             </div>   
             
             <div class="text-white col-lg-4">
-                <h1>Stephanie Alysha Living And Design</h1>
+                <h1>Stephanie Alysha Living and Design</h1>
                 <p class="lead">Powerfully improve your chi and still eat cheese</p>
                 <a href="#" class=" center btn btn-primary">Learn More</a>                </div>
             </div>
@@ -79,7 +63,8 @@
             <a class="nav-item nav-link" href="#">Feng Shui & Design</a>
             <a class="nav-item nav-link" href="#">Essential Oils</a>
             <a class="nav-item nav-link" href="#">Aromatherapy</a>
-            <a class="nav-item nav-link" href="#">Real Estate Staging</a>
+            <a class="nav-item nav-link" href="#">Real Estate & Staging</a>
+            <a class="nav-item nav-link" href="#">Book Now</a>
         </div>
         </div>
     </nav>
@@ -88,6 +73,12 @@
     <div class="text-center about-me">
         <h3>About Me</h3>
         <h4>Residential ~ Commercial ~ Real Estate</h4>
+        {{!-- <div class="container mb-5 mt-5 pb-5 pt-1 about-me-text"> --}}
+    <!-- THE BENEFITS COLUMNS -->
+            <div class="row">
+        <div class="col-lg-3">
+            </div>
+        <div class="text-center col-lg-5 about-me-text">
         <p>
 
 
@@ -108,10 +99,17 @@ For families and individuals, this means your creativity has room to expand, and
 </br>
 
 For businesses, watch productivity and foot traffic increase, and therefore revenue!</p>
+        
+    </div> 
+    </div>
+            <div class="col-lg-3">
+            </div>
+            
 </div>
 <!-- CALL TO ACTION - Book 1-on-1 now-->
 <div class="jumbotron text-center">
-        <h1 class = "text-center herotitle">Connect with Stephanie Alysha Living And Design: Optimize your space and make the most of your time</h1>
+        <h1 class = "text-center herotitle">Connect with Stephanie Alysha Living and Design:</h1>
+        <h1 class = "text-center herotitle">Optimize your space and make the most of your time</h1>
 
     <p class="lead mb-4">Book a 1-on-1 Now</p>
     <div class="d-flex justify-content-center">

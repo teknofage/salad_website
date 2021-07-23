@@ -44,6 +44,13 @@ body {
     right: 10em;
 }
 
+.about-me-text {
+    column-width: 100%;
+    padding: 0em; 
+    left: 5em;
+    right: 5em;
+}
+
 .footer {
     padding 1rem;
     background-color: orange;
