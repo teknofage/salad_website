@@ -1,12 +1,13 @@
 {
-  "name": "hello-node",
+  "name": "salad-website",
   "version": "0.0.1",
-  "description": "A simple Node app built on fastify, instantly up and running.",
+  "description": "A simple website Node app built on fastify, instantly up and running.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "fastify": "^3.19.1",
     "fastify-formbody": "^5.0.0",
     "fastify-static": "^4.2.2",
@@ -14,10 +15,10 @@
     "point-of-view": "^4.15.0"
   },
   "engines": {
-    "node": "12.x"
+    "node": "^14.3.0"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-node"
+    "url": "https://github.com/teknofage/salad_website"
   },
   "license": "MIT",
   "keywords": [
