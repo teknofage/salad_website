@@ -11,7 +11,7 @@
       <META NAME="geo.placename" CONTENT="Place Name">
       <META NAME="geo.region" CONTENT="Country Subdivision Code">
       <title>Stephanie Alysha Living And Design</title>
-      <description>Transform your space and your life with designer Stephanie Alysha. Feng Shui master with essential oils, staging, administrative and real estate solutions.</description>
+      {{!-- <description>Transform your space and your life with designer Stephanie Alysha. Feng Shui master with essential oils, staging, administrative and real estate solutions.</description> --}}
 
     
     <meta charset="utf-8" />
@@ -32,10 +32,10 @@
          <!-- BOOTSTRAP -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <!-- BOOTSTRAP THEME -->
-        <link rel="stylesheet" href="../bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
 
         <!-- CUSTOM STYLES --> 
-        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="../css/styles.css">
         
         <!-- NAVBAR -->
     <nav class="navbar navbar-dark">
@@ -48,7 +48,7 @@
             
             <div class="text-white col-lg-4">
                 <h1>Stephanie Alysha Living and Design</h1>
-                <p class="lead">Powerfully improve your chi and still eat cheese</p>
+                <p class="lead">{{seo.description}}</p>
                 <a href="#" class=" center btn btn-primary">Learn More</a>                </div>
             </div>
             
@@ -64,7 +64,7 @@
             <a class="nav-item nav-link" href="#">Essential Oils</a>
             <a class="nav-item nav-link" href="#">Aromatherapy</a>
             <a class="nav-item nav-link" href="#">Real Estate & Staging</a>
-            <a class="nav-item nav-link" href="#">Book Now</a>
+            <a class="nav-item nav-link" href="/book-now">Book Now</a>
         </div>
         </div>
     </nav>
@@ -113,10 +113,9 @@ For businesses, watch productivity and foot traffic increase, and therefore reve
 
     <p class="lead mb-4">Book a 1-on-1 Now</p>
     <div class="d-flex justify-content-center">
-        <form action="#" class='form-inline'>
-            <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email"/>
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-        </form>
+        
+        <button class="btn btn-primary mb-2" onclick="window.location.href='/book-now';">Book Now</button>
+        
     </div>
 </div>
 
@@ -173,6 +172,8 @@ For businesses, watch productivity and foot traffic increase, and therefore reve
 <!-- CALL TO ACTION -->
 <div class="jumbotron text-center">
     <h2 class="lead mb-5">Book a consultation before the end of the month, and get a free bottle of essential oil</h2>
+        <button class="btn btn-primary mb-2" onclick="window.location.href='/book-now';">Book Now</button>
+
     <p class="lead mb-4">Sign Up for More Information</p>
     <div class="d-flex justify-content-center">
         <form action="#" class='form-inline'>
