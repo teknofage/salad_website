@@ -114,7 +114,7 @@ For businesses, watch productivity and foot traffic increase, and therefore reve
     <p class="lead mb-4">Book a 1-on-1 Now</p>
     <div class="d-flex justify-content-center">
         
-        <button class="btn btn-primary mb-2" onclick="window.location.href='/book-now';">Book Now</button>
+        <a href="#calendly"><button class="btn btn-primary mb-2">Book Now</button></a>
         
     </div>
 </div>
@@ -172,7 +172,7 @@ For businesses, watch productivity and foot traffic increase, and therefore reve
 <!-- CALL TO ACTION -->
 <div class="jumbotron text-center">
     <h2 class="lead mb-5">Book a consultation before the end of the month, and get a free bottle of essential oil</h2>
-        <button class="btn btn-primary mb-2" onclick="window.location.href='/book-now';">Book Now</button>
+        <a href="#calendar" ><button class="btn btn-primary mb-2">Book Now</button></a>
 
     <p class="lead mb-4">Sign Up for More Information</p>
     <div class="d-flex justify-content-center">
@@ -182,10 +182,24 @@ For businesses, watch productivity and foot traffic increase, and therefore reve
         </form>
     </div>
 </div>
+<!-- Calendly inline widget begin -->
+<div id="calendar">
+    <div class="calendly-inline-widget" "calendar" style="min-width:320px;height:580px;" data-auto-load="false">
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+        <script>
+        Calendly.initInlineWidget({
+        url: 'https://calendly.com/stephanie-alysha'
+        });
+        </script>
+    </div>
+</div>
+<!-- Calendly inline widget end -->
 
 <!-- FOOTER -->
 <div class="p-5 text-white">
     &copy; 2021 Stephanie Alysha Inc
 </div>
+{{!-- set up Javascript in file and import it --}}
+<script src="pathtoscriptfile"></script>
   </body>
 </html>
