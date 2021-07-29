@@ -35,7 +35,7 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css">
 
         <!-- CUSTOM STYLES --> 
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/style.css">
         
         <!-- NAVBAR -->
     <nav class="navbar navbar-dark">
@@ -44,41 +44,57 @@
         <div class="row">
             <div class="col-lg-4">
                 <img src="../images/SAlysha-name-only.jpg" alt="Stephanie Alysha Living And Design Logo" class="img-fluid rounded">
+                <img src="../images/2021_Headshot.jpg" alt="Stephanie Alysha Living And Design Head Shot" class="img-fluid rounded">
+
             </div>   
             
             <div class="text-white col-lg-4">
                 <h1>Stephanie Alysha Living and Design</h1>
                 <p class="lead">{{seo.description}}</p>
-                <a href="#" class=" center btn btn-primary">Learn More</a>                </div>
+                {{!-- <a href="#" class=" center btn btn-primary">Learn More</a>                </div> --}}
             </div>
             
-            <div class="col-sm-2">
-                    <img src="../images/2021_Headshot.jpg" alt="Stephanie Alysha Living And Design Head Shot" class="img-fluid rounded">
-                </div>  
-        </div>
+            <div class="learn-more">
+                <button class="dropbtn">Learn More</button>
+                <div class="learn-more-content">
+                    <a href="#">Home</a>
+                    <a href="#">Feng Shui & Design</a>
+                    <a href="#">Essential Oils</a>
+                    <a href="#">Aromatherapy</a>
+                    <a href="#">Real Estate & Staging</a>
+                    <a href="#calendar">Book Now</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#follow">Follow</a>
+                </div>
+            </div>
 
-        </div>
-        <div class="navbar-nav">
+
+            {{!-- <div class="col-sm-2">
+                <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#">Feng Shui & Design</a>
             <a class="nav-item nav-link" href="#">Essential Oils</a>
             <a class="nav-item nav-link" href="#">Aromatherapy</a>
             <a class="nav-item nav-link" href="#">Real Estate & Staging</a>
-            <a class="nav-item nav-link" href="/book-now">Book Now</a>
+            <a class="nav-item nav-link" href="#calendar">Book Now</href=>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+            <a class="nav-item nav-link" href="#follow">Follow</a>
         </div>
+                </div>   --}}
         </div>
+
     </nav>
 
 <!-- HERO -->
-    <div class="text-center about-me">
-        <h3>About Me</h3>
-        <h4>Residential ~ Commercial ~ Real Estate</h4>
+    <div class="about-me">
+        <h3 class="text-center">About Me</h3>
+        <h4 class="text-center">Residential ~ Commercial ~ Real Estate</h4>
         {{!-- <div class="container mb-5 mt-5 pb-5 pt-1 about-me-text"> --}}
     <!-- THE BENEFITS COLUMNS -->
             <div class="row">
         <div class="col-lg-3">
             </div>
-        <div class="text-center col-lg-5 about-me-text">
+        <div class="col-lg-5 about-me-text">
         <p>
 
 
@@ -86,20 +102,23 @@ I’m a former government analyst and real estate administrative professional tr
 
 I specialize in co-creating interior spaces with my clients that are visually beautiful but also FEEL good.
 
-</br>
+</p>
+<p>
 
-Ask yourself: “How do I *feel* in my home or office?
+<strong>Ask yourself: “How do I *feel* in my home or office?</strong>
 
-</br>
+</p>
+<p>
 
 When you (or your family or clients) feel good in your home or office, this boosts the overall sense of happiness and well-being of all.
 
 For families and individuals, this means your creativity has room to expand, and your life flows smoother because you simply feel better!
 
-</br>
+</p>
+<p>
 
 For businesses, watch productivity and foot traffic increase, and therefore revenue!</p>
-        
+    </p>   
     </div> 
     </div>
             <div class="col-lg-3">
@@ -108,19 +127,20 @@ For businesses, watch productivity and foot traffic increase, and therefore reve
 </div>
 <!-- CALL TO ACTION - Book 1-on-1 now-->
 <div class="jumbotron text-center">
-        <h1 class = "text-center herotitle">Connect with Stephanie Alysha Living and Design:</h1>
-        <h1 class = "text-center herotitle">Optimize your space and make the most of your time</h1>
+        <h1 class = "text-center herotitle">Connect with </h1>
+        <h1 class = "text-center herotitle">Stephanie Alysha Living and Design:</h1>
+        <h3 class = "text-center herotitle">Optimize your space and make the most of your time</h3>
 
-    <p class="lead mb-4">Book a 1-on-1 Now</p>
+    <h2 class = "text-center herotitle">Book a 1-on-1 Now</h2>
     <div class="d-flex justify-content-center">
-        
-        <a href="#calendly"><button class="btn btn-primary mb-2">Book Now</button></a>
-        
+    </div>
+    <div>
+        <a href="#calendar"><button class="btn btn-primary mb-2">Book Now</button></a>
     </div>
 </div>
 
 <!-- Information and Learning -->
-<div class="container mb-5 mt-5 pb-5 pt-1">
+<div class="fields container mb-5 mt-5 pb-5 pt-1">
     <!-- THE BENEFITS COLUMNS -->
     <div class="row">
         <div class="col-lg-3">
@@ -149,16 +169,16 @@ For businesses, watch productivity and foot traffic increase, and therefore reve
 </div>
 
 <!-- Information and Learning -->
-<div class="container mb-5 mt-5 pb-5 pt-1">
+<div class="testimonials container mb-5 mt-5 pb-5 pt-1">
     <h2 class="headertekst">Testimonials</h2>
     <!-- THE BENEFITS COLUMNS -->
     <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-6">
             <h3>Julia C.</h3>           
             <p class="lead">“I have been interested in feng shui for many years, and Stephanie has always been there as a resource and a guide. Most recently, she helped me with a problem of too much water in my bedroom, and I was truly drowning in my relationship!! After following her suggestions to rebalance my elements there, I met my future husband just a few weeks later! Additionally, Stephanie introduced me to essential oils, which I found to be a very useful tool in managing my emotional and spiritual life. I am incredibly blessed to have had Stephanie’s help in my life!” 
             </p>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
             <h3>Michael M.Design</h3>
             <p class="lead">“I have had amazing results each time Stephanie has performed her abilities to Feng Shui my domicile. I had immediate wonderful results with my personal life after Stephanie changed the energy flow of my home. She is an extremely knowledgeable and has a great intuitive ability to ask the right questions. If you have never had an expert like Stephanie Feng Shui your home, be prepared to be amazed as I was with her ability. ” 
             </p>
@@ -170,16 +190,25 @@ For businesses, watch productivity and foot traffic increase, and therefore reve
 
 
 <!-- CALL TO ACTION -->
-<div class="jumbotron text-center">
+<div class="action text-center">
     <h2 class="lead mb-5">Book a consultation before the end of the month, and get a free bottle of essential oil</h2>
         <a href="#calendar" ><button class="btn btn-primary mb-2">Book Now</button></a>
 
-    <p class="lead mb-4">Sign Up for More Information</p>
+    <p class="lead mb-4">Or Contact Stephanie Alysha Living and Design for More Information</p>
     <div class="d-flex justify-content-center">
-        <form action="#" class='form-inline'>
-            <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email"/>
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-        </form>
+        <div class="contact">
+        <div id="contact">
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-555d2f41-0c15-47cf-ab7e-06488192f9e2"></div>
+        </div>
+        </div>
+        <div class="contact2">
+        <div id="contact">
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-555d2f41-0c15-47cf-ab7e-06488192f9e2"></div>
+        </div>
+        </div>
+
     </div>
 </div>
 <!-- Calendly inline widget begin -->
@@ -197,6 +226,7 @@ For businesses, watch productivity and foot traffic increase, and therefore reve
 
 <!-- FOOTER -->
 <div class="p-5 text-white">
+    <div id="follow">Follow Stephanie Alysha: INSERT INSTAGRAM WIDGET HERE</div>
     &copy; 2021 Stephanie Alysha Inc
 </div>
 {{!-- set up Javascript in file and import it --}}

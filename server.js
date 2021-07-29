@@ -69,16 +69,16 @@ fastify.post("/", function(request, reply) {
 });
 
 /**
-* Our book-now page route
+* Our Contact page route
 *
-* Returns src/pages/book-now.hbs with data built into it
+* Returns src/pages/contact.hbs with data built into it
 */
-fastify.get("/book-now", function(request, reply) {
+fastify.get("/contact", function(request, reply) {
   
   // params is an object we'll pass to our handlebars template
   let params = { seo: seo };
   
-  reply.view("/src/partials/book-now.hbs", params);
+  reply.view("/src/partials/contact.hbs", params);
 });
 
 /**
@@ -86,13 +86,13 @@ fastify.get("/book-now", function(request, reply) {
 *
 * Accepts body data indicating the user choice
 */
-fastify.post("/book-now", function(request, reply) {
+fastify.post("/contact", function(request, reply) {
   
   // Build the params object to pass to the template
   let params = { seo: seo };
   
   // The Handlebars template will use the parameter values to update the page with the chosen color
-  reply.view("/src/partials/book-now.hbs", params);
+  reply.view("/src/partials/contact.hbs", params);
 });
 
 
