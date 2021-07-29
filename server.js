@@ -96,11 +96,12 @@ fastify.post("/contact", function(request, reply) {
   reply.view("/src/partials/contact.hbs", params);
 });
 
-
+// Choose a port to listen on
+const port = process.env.PORT || 3333;
 
 
 // Run the server and report out to the logs
-fastify.listen(process.env.PORT || 3333, function(err, address) {
+fastify.listen(port, (err, address) => {
   if (err) {
     fastify.log.error(err);
     process.exit(1);
