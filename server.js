@@ -98,10 +98,11 @@ fastify.post("/contact", function(request, reply) {
 
 // Choose a port to listen on
 const port = process.env.PORT || 3333;
+var server_host = process.env.YOUR_HOST || '0.0.0.0';
 
 
 // Run the server and report out to the logs
-fastify.listen(port, (err, address) => {
+fastify.listen(port, server_host, (err, address) => {
   if (err) {
     fastify.log.error(err);
     process.exit(1);
